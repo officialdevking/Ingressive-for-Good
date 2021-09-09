@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: white;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+.logo{
+    width: 30%;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    padding: 0 20px;
+}
+a{
+    text-decoration: none;
+    color: #B1B1B1;
+    font-weight: 600;
+}
+.bi-search{
+    color: #303030;
+}
+nav ul button{
+    padding: 12px 15px;
+    border: none;
+    margin: 0 7px;
+    color: white;
+    font-weight: 600;
+}
+.donate{
+    background-color: #3EDAD8;
+}
+.donate:hover{
+    color: #e7e5e5;
+}
+.community{
+    background-color: #01BAB7;
+}
+.community{
+    color: #e7e5e5;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #191919;
+    color: white;
+}
+/* .obb{
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+    height: 100vh;
+} */
+.main_container{
+    display: flex;
+    color: white;
+}
+.main_container h1{
+    font-size: 27px;
+}
+.main_container button{
+    padding: 15px 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.container_1{
+    background-color: #3EDAD8;
+    padding: 70px;
+    width: 33%;
+}
+.container_2{
+    background-color: #2E2E2E;
+    padding: 70px;
+    width: 33.8%;
+}
+.img_1{
+    height: 40rem;
+    object-fit: cover;
+}
+.main_caro{
+    position: relative;
+}
+.caro{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+.main_container_1{
+    display: flex;
+    padding: 100px 0 0 60px;
+}
+.container_3{
+    width: 50%;
+    padding: 0 60px 0 10px;
+}
+.container_3 h1{
+    font-weight: bold;
+}
+.double{
+    width: 88%;
+}
+.container_4{
+    width: 50%;
+    padding: 20px 0;
+}
+.text_1{
+    font-size: 16px;
+    padding: 40px 60px 0 0;
+}
+.text_1 span{
+    font-weight: 600;
+    font-size: 20px;
+    color: #383838;
+}
+.text_1 p{
+    padding: 15px 50px 0 0;
+    color: #777777;
+    line-height: 1.5;
+}
+.bi-layers-fill, .bi-pencil-square{
+    fill: #01BAB7;
+    width: 25px;
+    height: 25px;
+    margin: -5px 20px 0 0;
+}
+.fa-handshake{
+    color: #01BAB7;
+    font-size: 30px;
+    margin: 0 20px 0 0;
+}
+.Micro{
+    font-size: 24px;
+}
+.underline{
+    width: 30px;
+    height: 5px;
+    background-color: #3EDAD8;
+}
+.main_container_2{
+    display: flex;
+    margin-top: 60px;
+}
+.container_5{
+    width: 35%;
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 100px 30px;
+}
+.container_5 h2{
+    font-weight: 800;
+    color: #01BAB7;
+}
+.fa-envelope-open{
+    color: white !important;
+    font-size: 50px;
+    padding: 20px 0 !important;
+}
+.container_5 p{
+    color: white;
+    padding: 10px 40px;
+    line-height: 1.5;
+}
+.container_5 p a{
+    color: #01BAB7;
+}
+.container_5 i{
+    color: #01BAB7;
+    padding: 0 10px;
+}
+.container_6{
+    width: 65%;
+    display: flex;
+    /* justify-content: space-between; */
+    background-image: url(./images/laura-chouette-almEtGpL-RM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container_6_1{
+    width: 100%;
+    padding: 100px 50px;
+    color: white;
+}
+.container_6_1 h4{
+    padding: 20px 0;
+    font-weight: 800;
+}
+.container_6_1 button{
+    padding: 12px 20px;
+    border: none;
+    margin: 20px 0 0 0;
+    color: white;
+    font-weight: 600;
+    background-color: #01BAB7;
+}
+.container_6_2{
+    width: 100%;
+    padding: 100px 0px;
+}
+.container_6_2 h2{
+    font-weight: 800;
+    color: #01BAB7;
+}
+.date{
+    text-align: center;
+    padding: 0 0;
+}
+.date h2{
+    padding: 0 0;
+    color: white;
+}
+.date h6{
+    padding: 0 0;
+    color: #01BAB7;
+    font-size: 20px;
+    font-weight: 600;
+}
+.eventname{
+    padding-left: 20px;
+    font-weight: 600;
+}
+.eventname h3:hover{
+    color: #01BAB7;
+    cursor: pointer;
+}
+.eventname h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    padding: 1px 0;
+}
+.donor{
+    width: 380px;
+}
+.underline_1{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+.container_6_1_1{
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    margin: 40px 0;
+}
+.shift{
+    padding: 0px 0 0 0 !important;
+}
