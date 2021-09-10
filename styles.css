@@ -9,14 +9,15 @@ body{
 nav{
     display: flex;
     align-items: center;
-    padding: 30px 50px;
+    justify-content: space-between;
+    padding: 30px 40px;
     background-color: white;
     position: sticky;
-    z-index: 5;
+    z-index: 3;
     top: 0;
 }
 .logo{
-    width: 30%;
+    width: 150px;
 }
 ul{
     display: flex;
@@ -34,8 +35,13 @@ a{
 .bi-search{
     color: #303030;
 }
+.bi-list{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
 nav ul button{
-    padding: 12px 15px;
+    padding: 10px 15px;
     border: none;
     margin: 0 7px;
     color: white;
@@ -53,13 +59,31 @@ nav ul button{
 .community{
     color: #e7e5e5;
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #191919;
+.sliding_menu{
+    background-color: #1F1F1F;
     color: white;
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    z-index: 5;
+    top: 0;
+    display: none;
 }
+.slide_open{
+    right: -320px;
+}
+.slider_text ul{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.slider_text li{
+    padding: 20px 0 ;
+}
+.cancel{
+    padding: 40px;
+}
+
 /* .obb{
     object-fit: cover;
     object-position: 50%;
@@ -157,6 +181,9 @@ footer{
 .main_container_2{
     display: flex;
     margin-top: 60px;
+    background-image: url(./images/laura-chouette-almEtGpL-RM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .container_5{
     width: 35%;
@@ -189,9 +216,6 @@ footer{
     width: 65%;
     display: flex;
     /* justify-content: space-between; */
-    background-image: url(./images/laura-chouette-almEtGpL-RM-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
 }
 .container_6_1{
     width: 100%;
@@ -247,7 +271,7 @@ footer{
     padding: 1px 0;
 }
 .donor{
-    width: 380px;
+    width: 100%;
 }
 .underline_1{
     width: 40px;
@@ -256,10 +280,107 @@ footer{
 }
 .container_6_1_1{
     display: flex;
-    /* justify-content: center; */
-    /* flex-direction: column; */
     margin: 40px 0;
 }
 .shift{
     padding: 0px 0 0 0 !important;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #191919;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    nav{
+        padding: 20px 10px 15px 50px;
+    }
+    nav ul button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bi-list{
+        display: flex;
+    }
+    nav ul li a .bi-search{
+        display: flex !important;
+    }
+    nav ul li{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .main_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_1{
+        width: 70%;
+    }
+    .container_2{
+        width: 70%;
+    }
+    .main_container_2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container_5{
+        width: 70%;
+    }
+    .container_6{
+        flex-direction: column;
+    }
+    .main_container_1{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 100px 0;
+    }
+    .container_3{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container_4{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_1{
+        padding: 40px 0px 0 0;
+        margin: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .container_1{
+        width: 90%;
+        padding: 40px;
+    }
+    .container_2{
+        width: 90%;
+        padding: 40px;
+    }
+    .container_5{
+        width: 90%;
+    }
+    .main_container_1{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .container_6{
+        width: 100%;
+    }
+    .container_6_2{
+        width: 100%;
+        padding: 0 20px;
+    }
+
 }

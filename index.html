@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>INGRESSIVE FOR GOOD</title>
   </head>
-  <body>
+  <body class="slide_open">
     <nav class="animate__animated animate__fadeInDown">
       <div class="ingress">
           <img src="./images/I4G-Logo-Color-Cropped.png" alt="#" class="logo">
@@ -30,9 +30,29 @@
                 </svg></a></li>
               <button class="donate">DONATE</button>
               <button class="community">COMMUNITY</button>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="hamburger" class="bi bi-list " viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
           </ul>
       </div>
   </nav>
+
+  <div id="sliding_menu" class="sliding_menu animate__animated animate__fadeInRight">
+    <div class="cancel">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="cancel" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+      </svg>
+    </div>
+    <div class="slider_text">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Press</a></li>
+    </ul>
+    </div>
+  </div>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -214,5 +234,6 @@
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
