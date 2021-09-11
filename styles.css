@@ -40,10 +40,19 @@ a{
     height: 30px;
     display: none;
 }
+button{
+    cursor: pointer;
+}
 nav ul button{
     padding: 10px 15px;
     border: none;
     margin: 0 7px;
+    color: white;
+    font-weight: 600;
+}
+.carousel-caption .donate{
+    padding: 10px 15px;
+    border: none;
     color: white;
     font-weight: 600;
 }
@@ -118,6 +127,35 @@ nav ul button{
 .img_1{
     height: 40rem;
     object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-control-next-icon{
+    background-image: none;
+}
+.carousel-control-prev-icon{
+    background-image: none;
+}
+.carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+}
+.carousel-caption{
+    right: 0px;
+    left: 20px;
+    top: 10%;
+    text-align: start;
+}
+.carousel-caption h1{
+    font-weight: 800;
+    color: white;
+    font-size: 5rem;
+}
+.carousel-caption p{
+    font-size: 1.7rem;
+}
+.i4g{
+    color: #01BAB7;
 }
 .main_caro{
     position: relative;
@@ -381,6 +419,12 @@ footer{
     .container_6_2{
         width: 100%;
         padding: 0 20px;
+    }
+    .carousel-caption h1{
+        font-size: 3rem;
+    }
+    .carousel-caption p{
+        font-size: 1rem;
     }
 
 }
