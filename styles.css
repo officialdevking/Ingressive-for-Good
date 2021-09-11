@@ -5,7 +5,9 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    
 }
+
 nav{
     display: flex;
     align-items: center;
@@ -80,7 +82,8 @@ nav ul button{
     display: none;
 }
 .slide_open{
-    right: -320px;
+    position: relative;
+    left: -320px;
 }
 .slider_text ul{
     flex-direction: column;
@@ -139,6 +142,7 @@ nav ul button{
 .carousel-indicators [data-bs-target]{
     width: 13px;
     height: 13px;
+    border-radius: 50%;
 }
 .carousel-caption{
     right: 0px;
